@@ -1,7 +1,37 @@
 ---
 import Page from "../layouts/Page.astro";
+
+const story = [
+  "Hello?",
+  "Who is this?",
+  "Is this the Krusty Krab?",
+  "No, this is Patrick.",
+  "Patrick, that's the name of the restaurant.",
+  "Uhh, yeah, I'd like to order a pizza to go.",
+  "This is the Krusty Krab.",
+  "Oh, okay. I'd like to order a Krabby Patty to go.",
+  "We don't serve food here, sir.",
+  "Uhh, Patrick, are you feeling okay?",
+  "Uh, I don't think so.",
+  "Then why are you acting so weird?",
+  "We're closed.",
+  "Who is this?",
+  "Patrick, I know it's you.",
+  "Is this the Krusty Krab?",
+  "No, this is Patrick.",
+];
 ---
 
 <Page title="Home">
-  <p class="text-xl font-dm-bold text-onBackground">Hello?</p>
+  <div class="w-[40vw] flex items-center justify-start flex-col gap-y-2">
+    {
+      story.map((line) => {
+        return (
+          <p class="text-onBackground text-lg self-end even:self-start">
+            {line}
+          </p>
+        );
+      })
+    }
+  </div>
 </Page>
