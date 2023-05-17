@@ -1,0 +1,240 @@
+@import "../lib/colors";
+@import "../lib/fonts";
+@import "../lib/mixins";
+
+$navbar-height: 3rem + .8rem * 2;
+$navbar-transition: 250ms ease-in-out;
+$navbar-offset: .5rem;
+
+.navbar-toggle-container {
+    @include multiple(on-phone, on-tablet) {
+        @include flex(column, true);
+        right: .5rem;
+        top: 0;
+        width: fit-content;
+        height: 100%;
+        transform: translateX(0);
+    }
+    @include on-pc() {
+        @include flex(row, true);
+        left: 0;
+        bottom: .5rem;
+        width: 100%;
+        height: fit-content;
+        transform: translateY(0);
+    }
+
+    position: fixed;
+    transition: transform $navbar-transition;
+
+    .navbar-toggle {
+        position: relative;
+        margin: 0;
+        @include multiple(on-phone, on-tablet) {
+            transform: rotate(90deg);
+        }
+        @include on-pc() {
+            transform: rotate(180deg);
+        }
+        transition: transform $navbar-transition, margin $navbar-transition;
+        cursor: pointer;
+        z-index: 1;
+        background: transparent;
+        border: none;
+    }
+
+    &.active {
+        @include multiple(on-phone, on-tablet) {
+            transform: translateX(-175%);
+        }
+        @include on-pc() {
+            transform: translateY(-100%);
+        }
+
+        .navbar-toggle {
+            @include multiple(on-phone, on-tablet) {
+                transform: rotate(-90deg);
+                animation: icon-rotate-phone $navbar-transition;
+            }
+            @include on-pc() {
+                transform: rotate(0deg);
+                animation: icon-rotate-pc $navbar-transition;
+            }
+        }
+    }
+}
+
+.navbar-container {
+    @include multiple(on-phone, on-tablet) {
+        @include flex(column, true);
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        width: fit-content;
+        height: 100%;
+    }
+    @include on-pc() {
+        @include flex(row, true);
+        left: 0;
+        bottom: 0;
+        transform: translateY(100%);
+        width: 100%;
+        height: fit-content;
+    }
+
+    position: fixed;
+    pointer-events: none;
+    background: transparent;
+    margin: 0;
+    transition: transform $navbar-transition, margin $navbar-transition;
+
+    .navbar {
+        display: block;
+        position: relative;
+        @include multiple(on-phone, on-tablet) {
+            @include flex(column, true);
+        }
+        @include on-pc() {
+            @include flex(row, true);
+        }
+        width: fit-content;
+        height: fit-content;
+        pointer-events: none;
+        border-radius: 10rem;
+        background-color: $black-800;
+        z-index: 1;
+
+        .navbar-item {
+            position: relative;
+            border: none;
+            @include responsive(margin, .75rem, .7rem .6rem, .6rem .45rem);
+            @include responsive(padding, 0, 0 .25rem, 0 .5rem);
+            cursor: pointer;
+            color: $white-200;
+            background-color: transparent;
+            @include responsive(font-size, 1.25rem, 1.15rem, 1.05rem);
+            font-family: "JetBrains Mono Semi Bold", $backup-font;
+            transition: color $navbar-transition;
+            pointer-events: all;
+
+            &.selected {
+                color: $orange-500 !important;
+            }
+
+            &:first-of-type {
+                @include multiple(on-phone, on-tablet) {
+                    margin-top: 1.5rem;
+                }
+                @include on-pc() {
+                    margin-left: 1.5rem;
+                }
+            }
+
+            &:last-of-type {
+                @include multiple(on-phone, on-tablet) {
+                    margin-bottom: 1.5rem;
+                }
+                @include on-pc() {
+                    margin-right: 1.5rem;
+                }
+            }
+        }
+    }
+
+    &.active {
+        @include multiple(on-phone, on-tablet) {
+            transform: translateX(0);
+            margin: 0 .25rem 0 0;
+        }
+        @include on-pc() {
+            transform: translateY(0);
+            margin: 0 0 .5rem 0;
+        }
+    }
+}
+
+.navbar-buttons {
+    @include flex(row, true);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $navbar-height;
+    transition: opacity $navbar-transition;
+    pointer-events: none;
+
+    .navbar-button {
+        @include flex(row, true);
+        position: fixed;
+        bottom: $navbar-offset;
+        font-size: 1.2rem;
+        font-family: "JetBrains Mono Regular", $backup-font;
+        background-color: transparent;
+        border: transparent 2px solid;
+        border-radius: 1rem;
+        @include responsive(padding, .5rem 1rem, .5rem .8rem, .4rem .6rem);
+        cursor: pointer;
+        color: $white-300;
+        z-index: 1;
+        pointer-events: all;
+
+        $backdrop-filter: blur(5px) brightness(95%) grayscale(20%);
+        @include supported(backdrop-filter, $backdrop-filter) {
+            background-color: $black-900;
+        }
+
+        .navbar-button-icon {
+            margin: 0 0 0 .5rem;
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+
+        &.previous {
+            @include responsive(left, $navbar-offset * 1.2, $navbar-offset * .8, $navbar-offset * .4);
+            flex-direction: row-reverse;
+
+            .navbar-button-icon {
+                transform: rotate(180deg);
+                margin: 0 .5rem 0 0;
+            }
+        }
+
+        &.next {
+            @include responsive(right, $navbar-offset * 1.2, $navbar-offset * .8, $navbar-offset * .4);
+        }
+
+        &.disabled {
+            display: none;
+        }
+
+        &:hover {
+            color: $white-100;
+            border-color: $orange-500;
+            font-family: "JetBrains Mono Semi Bold", $backup-font;
+        }
+    }
+}
+
+@keyframes icon-rotate-pc {
+    0% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes icon-rotate-phone {
+    0% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}

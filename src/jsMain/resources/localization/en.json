@@ -1,0 +1,362 @@
+{
+    "name": "English",
+    "short": "en",
+    "icon": "us.png",
+    "translations": {
+        "home": {
+            "title1": "Hi,",
+            "title2": "I am Daniel Svitan,",
+            "title3": "a full-stack developer.",
+            "lookAt": "Go ahead and look at",
+            "or": "or",
+            "about": "my bio",
+            "contact": "contact me",
+            "period": ".",
+            "shortcuts": "Click here to show shortcut help"
+        },
+        "about": {
+            "title": "About me",
+            "nameAndAge": [
+                {
+                    "value": "My name is "
+                },
+                {
+                    "value": "Daniel",
+                    "special": true
+                },
+                {
+                    "value": " "
+                },
+                {
+                    "value": "Svitan",
+                    "special": true
+                },
+                {
+                    "value": ", I come from "
+                },
+                {
+                    "value": "Slovakia",
+                    "special": true
+                },
+                {
+                    "value": " and I am %yo% years old.",
+                    "format": true
+                },
+                {
+                    "value": " I first started coding when I was 13 years old and I immediately fell in love with it. I've been coding ever since."
+                }
+            ],
+            "education": [
+                {
+                    "value": "I am studying at the "
+                },
+                {
+                    "value": "Gercenova",
+                    "special": true
+                },
+                {
+                    "value": " "
+                },
+                {
+                    "value": "High",
+                    "special": true
+                },
+                {
+                    "value": " "
+                },
+                {
+                    "value": "School",
+                    "special": true
+                },
+                {
+                    "value": " in Bratislava and attending "
+                },
+                {
+                    "value": "IT",
+                    "special": true
+                },
+                {
+                    "value": " "
+                },
+                {
+                    "value": "STEP",
+                    "special": true
+                },
+                {
+                    "value": " "
+                },
+                {
+                    "value": "Academy",
+                    "special": true
+                },
+                {
+                    "value": ", where we learn about more advanced programming topics like machine learning, artificial intelligence, neural networks and data science."
+                }
+            ],
+            "hobbies": [
+                {
+                    "value": "In my free time, I like to play "
+                },
+                {
+                    "value": "badminton",
+                    "special": true
+                },
+                {
+                    "value": ", volleyball, basketball and "
+                },
+                {
+                    "value": "guitar",
+                    "special": true
+                },
+                {
+                    "value": " which I have been learning for almost 5 years now."
+                },
+                {
+                    "value": " I also tried many other sports, like hockey, floorball, soccer, tennis or swimming just to name a few."
+                }
+            ],
+            "spokenLanguages": [
+                {
+                    "value": "Except my mother tong, I speak fluent "
+                },
+                {
+                    "value": "English",
+                    "special": true
+                },
+                {
+                    "value": " (%ey% years) and a little ",
+                    "format": true
+                },
+                {
+                    "value": "German",
+                    "special": true
+                },
+                {
+                    "value": " (%gy% years).",
+                    "format": true
+                }
+            ]
+        },
+        "skills": {
+            "title": "My skills",
+            "subtitle": "I have marked my favourite technologies with a golden color",
+            "frontendTitle": "Frontend skills",
+            "frontendSkills": [
+                {
+                    "name": "HTML5"
+                },
+                {
+                    "name": "CSS3, SCSS"
+                },
+                {
+                    "name": "JavaScript, TypeScript"
+                },
+                {
+                    "name": "Bootstrap, TailWindCSS"
+                },
+                {
+                    "name": "Ruby on Rails",
+                    "golden": true
+                },
+                {
+                    "name": "React, Next"
+                },
+                {
+                    "name": "Electron"
+                },
+                {
+                    "name": "Compose for Android, Compose for Desktop, Compose for Web",
+                    "golden": true
+                },
+                {
+                    "name": "GTK3, GTK4",
+                    "golden": true
+                }
+            ],
+            "backendTitle": "Backend skills",
+            "backendSkills": [
+                {
+                    "name": "SpringBoot, Ktor",
+                    "golden": true
+                },
+                {
+                    "name": "Express, NestJS",
+                    "golden": true
+                },
+                {
+                    "name": "Ruby on Rails"
+                },
+                {
+                    "name": "Fiber"
+                }
+            ],
+            "databaseTitle": "Database skills",
+            "databaseSkills": [
+                {
+                    "name": "PostgresSQL",
+                    "golden": true
+                },
+                {
+                    "name": "MySQL"
+                },
+                {
+                    "name": "Redis",
+                    "golden": true
+                },
+                {
+                    "name": "EdgeDB"
+                }
+            ],
+            "otherTitle": "Other skills",
+            "otherSkills": [
+                {
+                    "name": "Docker"
+                },
+                {
+                    "name": "Apache"
+                },
+                {
+                    "name": "Caddy",
+                    "golden": true
+                }
+            ]
+        },
+        "projects": {
+            "title": "Projects",
+            "proprietary": "Sorry, this project is closed source",
+            "planning": "Planning",
+            "development": "Development",
+            "production": "Production",
+            "deprecated": "Deprecated",
+            "projects": [
+                {
+                    "name": "NatArt",
+                    "description": "The NatArt eshop",
+                    "sources": null,
+                    "phase": "DEVELOPMENT"
+                },
+                {
+                    "name": "New",
+                    "url": "https://new.svitan.dev",
+                    "description": "Web project generator",
+                    "sources": [
+                        {
+                            "name": "Frontend",
+                            "href": "https://github.com/Streamer272/new"
+                        }
+                    ],
+                    "phase": "PRODUCTION"
+                },
+                {
+                    "name": "Startpage",
+                    "url": "https://start.svitan.dev",
+                    "description": "My personal startpage",
+                    "sources": [
+                        {
+                            "name": "Frontend",
+                            "href": "https://github.com/Streamer272/startpage"
+                        },
+                        {
+                            "name": "Frontend (deprecated)",
+                            "href": "https://github.com/Streamer272/startpage-angular"
+                        }
+                    ],
+                    "phase": "PRODUCTION"
+                },
+                {
+                    "name": "Automod",
+                    "url": "https://automod.svitan.dev",
+                    "description": "Automod for Discord",
+                    "sources": [
+                        {
+                            "name": "Frontend",
+                            "href": "https://github.com/CapnCool/cool_automod_ui"
+                        },
+                        {
+                            "name": "Bot",
+                            "href": "https://github.com/Streamer272/automod"
+                        }
+                    ],
+                    "phase": "PRODUCTION"
+                },
+                {
+                    "name": "Portfolio",
+                    "url": "https://svitan.dev",
+                    "description": "My personal portfolio website",
+                    "sources": [
+                        {
+                            "name": "Frontend",
+                            "href": "https://github.com/Streamer272/portfolio"
+                        }
+                    ],
+                    "phase": "PRODUCTION"
+                },
+                {
+                    "name": "RPG Management",
+                    "description": "Next-generation tool for managing RPG games in real time",
+                    "sources": null,
+                    "phase": "DEVELOPMENT"
+                },
+                {
+                    "name": "Advent Challenge",
+                    "description": "Edupage-like clone with Christmass theme",
+                    "sources": [
+                        {
+                            "name": "Frontend",
+                            "href": "https://github.com/7274-dev/AdventnaVyzva-React"
+                        },
+                        {
+                            "name": "Backend",
+                            "href": "https://github.com/7274-dev/AdventnaVyzva-GlobalBackend"
+                        }
+                    ],
+                    "phase": "DEPRECATED"
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contact me",
+            "emailSubtitle": "You can contact me via email,",
+            "socialMediaSubtitle": "or via social media",
+            "socialMedia": [
+                {
+                    "name": "LinkedIn",
+                    "icon": "linkedin.svg",
+                    "url": "https://www.linkedin.com/in/daniel-svitan-2a86b1214"
+                },
+                {
+                    "name": "Facebook",
+                    "icon": "facebook.png",
+                    "url": "https://www.facebook.com/daniel.svitan.team7274"
+                },
+                {
+                    "name": "Discord",
+                    "icon": "discord.png",
+                    "url": "https://discord.com/channels/@me",
+                    "additionalInfo": "Streamer272#1523"
+                },
+                {
+                    "name": "WhatsApp",
+                    "icon": "whatsapp.png",
+                    "url": "https://web.whatsapp.com",
+                    "additionalInfo": "+1 (669) 294-9970"
+                }
+            ],
+            "subject": "Subject",
+            "message": "Message",
+            "send": "Send",
+            "copied": "Copied to clipboard!"
+        },
+        "navbar": {
+            "previous": "Previous",
+            "next": "Next",
+            "pages": {
+                "home": "Home",
+                "about": "About",
+                "skills": "Skills",
+                "projects": "Projects",
+                "contact": "Contact"
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "../lib/colors";
+
+$page-transition: 600ms ease-in-out;
+
+.page-transition {
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: $black-800;
+    width: 0;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+
+    &.from-left {
+        left: 0;
+        animation: page-transition-from-left $page-transition;
+    }
+
+    &.from-right {
+        right: 0;
+        animation: page-transition-from-right $page-transition;
+    }
+}
+
+@keyframes page-transition-from-left {
+    0% {
+        width: 0;
+        margin-left: 0;
+    }
+    50% {
+        width: 100vw;
+        margin-left: 0;
+    }
+    100% {
+        width: 0;
+        margin-left: 100vw;
+    }
+}
+
+@keyframes page-transition-from-right {
+    0% {
+        width: 0;
+        margin-right: 0;
+    }
+    50% {
+        width: 100vw;
+        margin-right: 0;
+    }
+    100% {
+        width: 0;
+        margin-right: 100vw;
+    }
+}

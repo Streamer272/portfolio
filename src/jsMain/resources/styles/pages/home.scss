@@ -1,0 +1,36 @@
+@import "../lib/colors";
+
+.home {
+    .title {
+        margin: .25rem 0;
+        padding: 0;
+
+        .t1 {
+            font-size: 1.25rem;
+        }
+
+        .t2 {
+            font-size: 1.4rem;
+        }
+
+        .t3 {
+            font-size: 1.3rem;
+        }
+    }
+
+    .description {
+        display: inline-block;
+        margin: 1rem 0 .25rem 0;
+        padding: 0;
+        color: $white-200;
+
+        &:not(:last-of-type) {
+            margin-right: .6rem;
+        }
+
+        &.link {
+            color: $orange-500;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "../lib/colors";
+
+$popup-transition: 300ms ease-in-out;
+
+.popup-container {
+    .popup {
+        display: inline-block;
+        position: absolute;
+        background-color: $black-800;
+        border-radius: 1rem;
+        margin: 0;
+        padding: .5rem 1rem;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(.5rem) translateY(.5rem);
+        transition: visibility $popup-transition, opacity $popup-transition;
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

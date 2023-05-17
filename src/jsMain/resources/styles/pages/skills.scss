@@ -1,0 +1,58 @@
+@import "../lib/colors";
+
+.skills {
+    .skills-title {
+        margin: .65rem 0;
+        padding: 0;
+    }
+
+    .skills-subtitle {
+        margin: .4rem 0;
+        padding: 0;
+
+        &::before {
+            content: "(";
+        }
+
+        &::after {
+            content: ")";
+        }
+    }
+
+    .skills-title-spacer {
+        margin: 1.5rem 0 2rem 0;
+    }
+
+    .skills-list-title {
+        margin: 1.25rem 0 .5rem 0;
+    }
+
+    .skills-list {
+        margin: .25rem 0;
+    }
+
+    .skills-list-item {
+        margin: 0;
+        padding: 0;
+
+        .skills-list-item-text {
+            margin: 0;
+            padding: 0;
+            width: fit-content;
+
+            &.golden {
+                color: $orange-400;
+                animation: text-glow 3000ms ease-in-out infinite;
+            }
+        }
+    }
+}
+
+@keyframes text-glow {
+    0%, 100% {
+        text-shadow: 0 0 4px $orange-500;
+    }
+    50% {
+        text-shadow: 0 0 6px $orange-500;
+    }
+}

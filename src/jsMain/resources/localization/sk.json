@@ -1,0 +1,355 @@
+{
+    "name": "Slovenčina",
+    "short": "sk",
+    "icon": "sk.png",
+    "translations": {
+        "home": {
+            "title1": "Ahoj,",
+            "title2": "Ja som Daniel Svitan,",
+            "title3": "full-stack developer.",
+            "lookAt": "Kľudne sa pozri na",
+            "or": "alebo",
+            "about": "moje bio",
+            "contact": "ma kontaktuj",
+            "period": ".",
+            "shortcuts": "Klikni tu pre zobrazenie klávesových skratiek"
+        },
+        "about": {
+            "title": "O mne",
+            "nameAndAge": [
+                {
+                    "value": "Moje meno je "
+                },
+                {
+                    "value": "Daniel",
+                    "special": true
+                },
+                {
+                    "value": " "
+                },
+                {
+                    "value": "Svitaň",
+                    "special": true
+                },
+                {
+                    "value": ", som zo "
+                },
+                {
+                    "value": "Slovakia",
+                    "special": true
+                },
+                {
+                    "value": " a mám %yo% rokov.",
+                    "format": true
+                },
+                {
+                    "value": " Programovať som začal keď som mal 13 rokov a hneď som sa do toho zamiloval. Odvtedy programujem."
+                }
+            ],
+            "education": [
+                {
+                    "value": "Študujem na "
+                },
+                {
+                    "value": "gymnáziu",
+                    "special": true
+                },
+                {
+                    "value": " "
+                },
+                {
+                    "value": "Gercenova",
+                    "special": true
+                },
+                {
+                    "value": " v Bratislave a navštevujem aj "
+                },
+                {
+                    "value": "IT",
+                    "special": true
+                },
+                {
+                    "value": " "
+                },
+                {
+                    "value": "STEP",
+                    "special": true
+                },
+                {
+                    "value": " "
+                },
+                {
+                    "value": "Akadémiu",
+                    "special": true
+                },
+                {
+                    "value": " kde sa učíme o zložitejších programátorských témach, ako je strojové učenie, umelá inteligencia, neurónové siete alebo dátová veda."
+                }
+            ],
+            "hobbies": [
+                {
+                    "value": "V mojom voľnom čase si rád zahrám "
+                },
+                {
+                    "value": "badminton",
+                    "special": true
+                },
+                {
+                    "value": ", volleyball, basketball a aj na "
+                },
+                {
+                    "value": "gitaru",
+                    "special": true
+                },
+                {
+                    "value": " na ktorú sa učím hrať už 5 rokov."
+                },
+                {
+                    "value": " Tiež som skúsil veľa iných športov, ako hokej, floorball, futbal, tenis, plávanie..."
+                }
+            ],
+            "spokenLanguages": [
+                {
+                    "value": "Okrem môjho materinského jazyka, rozprávam aj po "
+                },
+                {
+                    "value": "Anglicky",
+                    "special": true
+                },
+                {
+                    "value": " (%ey% rokov) a trochu ",
+                    "format": true
+                },
+                {
+                    "value": "Nemecky",
+                    "special": true
+                },
+                {
+                    "value": " (%gy% rokov).",
+                    "format": true
+                }
+            ]
+        },
+        "skills": {
+            "title": "Moje zručnosti",
+            "subtitle": "Moje obľúbené technológie som označil zlatou farbou",
+            "frontendTitle": "Frontend zručnosti",
+            "frontendSkills": [
+                {
+                    "name": "HTML5"
+                },
+                {
+                    "name": "CSS3, SCSS"
+                },
+                {
+                    "name": "JavaScript, TypeScript"
+                },
+                {
+                    "name": "Bootstrap, TailWindCSS"
+                },
+                {
+                    "name": "Ruby on Rails",
+                    "golden": true
+                },
+                {
+                    "name": "React, Next"
+                },
+                {
+                    "name": "Electron"
+                },
+                {
+                    "name": "Compose for Android, Compose for Desktop, Compose for Web",
+                    "golden": true
+                },
+                {
+                    "name": "GTK3, GTK4",
+                    "golden": true
+                }
+            ],
+            "backendTitle": "Backend zručnosti",
+            "backendSkills": [
+                {
+                    "name": "SpringBoot, Ktor",
+                    "golden": true
+                },
+                {
+                    "name": "Express, NestJS",
+                    "golden": true
+                },
+                {
+                    "name": "Ruby on Rails"
+                },
+                {
+                    "name": "Fiber"
+                }
+            ],
+            "databaseTitle": "Databázové zručnosti",
+            "databaseSkills": [
+                {
+                    "name": "PostgresSQL",
+                    "golden": true
+                },
+                {
+                    "name": "MySQL"
+                },
+                {
+                    "name": "Redis",
+                    "golden": true
+                },
+                {
+                    "name": "EdgeDB"
+                }
+            ],
+            "otherTitle": "Iné zručnosti",
+            "otherSkills": [
+                {
+                    "name": "Docker"
+                },
+                {
+                    "name": "Apache"
+                },
+                {
+                    "name": "Caddy",
+                    "golden": true
+                }
+            ]
+        },
+        "projects": {
+            "title": "Projekty",
+            "proprietary": "Prepáč, tento projekt má súkromný zdroj",
+            "planning": "Plánuje sa",
+            "development": "Developuje sa",
+            "production": "V produkcii",
+            "deprecated": "Zastarané",
+            "projects": [
+                {
+                    "name": "NatArt",
+                    "description": "NatArt eshop",
+                    "sources": null,
+                    "phase": "DEVELOPMENT"
+                },
+                {
+                    "name": "New",
+                    "url": "https://new.svitan.dev",
+                    "description": "Generátor webových projektov",
+                    "sources": [
+                        {
+                            "name": "Frontend",
+                            "href": "https://github.com/Streamer272/new"
+                        }
+                    ],
+                    "phase": "PRODUCTION"
+                },
+                {
+                    "name": "Startpage",
+                    "url": "https://start.svitan.dev",
+                    "description": "Moja vlastná úvodná stránka",
+                    "sources": [
+                        {
+                            "name": "Frontend",
+                            "href": "https://github.com/Streamer272/startpage"
+                        },
+                        {
+                            "name": "Frontend (deprecated)",
+                            "href": "https://github.com/Streamer272/startpage-angular"
+                        }
+                    ],
+                    "phase": "PRODUCTION"
+                },
+                {
+                    "name": "Automod",
+                    "url": "https://automod.svitan.dev",
+                    "description": "Automod pre Discord",
+                    "sources": [
+                        {
+                            "name": "Frontend",
+                            "href": "https://github.com/CapnCool/cool_automod_ui"
+                        },
+                        {
+                            "name": "Bot",
+                            "href": "https://github.com/Streamer272/automod"
+                        }
+                    ],
+                    "phase": "PRODUCTION"
+                },
+                {
+                    "name": "Portfolio",
+                    "url": "https://svitan.dev",
+                    "description": "Moja vlastná portfólio webstránka",
+                    "sources": [
+                        {
+                            "name": "Frontend",
+                            "href": "https://github.com/Streamer272/portfolio"
+                        }
+                    ],
+                    "phase": "PRODUCTION"
+                },
+                {
+                    "name": "RPG Management",
+                    "description": "Nástroj ďalšej generácie na manažovanie RPG hier v reálnom čase",
+                    "sources": null,
+                    "phase": "DEVELOPMENT"
+                },
+                {
+                    "name": "Adventná Výzva",
+                    "description": "Edupage klon s Vianočnou témou",
+                    "sources": [
+                        {
+                            "name": "Frontend",
+                            "href": "https://github.com/7274-dev/AdventnaVyzva-React"
+                        },
+                        {
+                            "name": "Backend",
+                            "href": "https://github.com/7274-dev/AdventnaVyzva-GlobalBackend"
+                        }
+                    ],
+                    "phase": "DEPRECATED"
+                }
+            ]
+        },
+        "contact": {
+            "title": "Kontaktuj ma",
+            "emailSubtitle": "Môžeš ma kontaktovať cez email,",
+            "socialMediaSubtitle": "alebo cez sociálne médiá",
+            "socialMedia": [
+                {
+                    "name": "LinkedIn",
+                    "icon": "linkedin.svg",
+                    "url": "https://www.linkedin.com/in/daniel-svitan-2a86b1214"
+                },
+                {
+                    "name": "Facebook",
+                    "icon": "facebook.png",
+                    "url": "https://www.facebook.com/daniel.svitan.team7274"
+                },
+                {
+                    "name": "Discord",
+                    "icon": "discord.png",
+                    "url": "https://discord.com/channels/@me",
+                    "additionalInfo": "Streamer272#1523"
+                },
+                {
+                    "name": "WhatsApp",
+                    "icon": "whatsapp.png",
+                    "url": "https://web.whatsapp.com",
+                    "additionalInfo": "+421 948 309 804"
+                }
+            ],
+            "subject": "Predmet",
+            "message": "Správa",
+            "send": "Poslať",
+            "copied": "Skopírované do schránky!"
+        },
+        "navbar": {
+            "previous": "Späť",
+            "next": "Ďalej",
+            "pages": {
+                "home": "Domov",
+                "about": "O mne",
+                "skills": "Zručnosti",
+                "projects": "Projekty",
+                "contact": "Kontakt"
+            }
+        }
+    }
+}
