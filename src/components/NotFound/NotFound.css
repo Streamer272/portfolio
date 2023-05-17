@@ -1,0 +1,31 @@
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1%;
+  flex-direction: column;
+  height: 100%;
+}
+@media only screen and (max-width: 666px) {
+  .not-found {
+    justify-content: flex-start;
+  }
+}
+.not-found h1, .not-found h2 {
+  margin: 0.25rem;
+  padding: 0;
+}
+.not-found h1 {
+  font-size: 2.75rem;
+}
+.not-found h2 {
+  font-size: 2.25rem;
+}
+.not-found a {
+  text-decoration: underline #eeeeee;
+  color: #eeeeee;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=NotFound.css.map */

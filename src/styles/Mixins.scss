@@ -1,0 +1,55 @@
+@mixin flex($direction, $root) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @if ($root == true) {
+        @media only screen and (max-width: 666px) {
+            justify-content: flex-start;
+        }
+
+        margin-top: -1%;
+    }
+    flex-direction: $direction;
+}
+
+@mixin vertical-list() {
+    ol {
+        @include flex(column, false);
+
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+
+        li {
+            @include flex(column, false);
+
+            margin: 0;
+            padding: 0;
+
+            h3 {
+                text-align: center;
+
+                margin: 1rem 0;
+
+                font-size: 1.75rem;
+                font-weight: bold;
+            }
+
+            ul {
+                @include flex(column, false);
+
+                margin: 0;
+                padding: 0;
+
+                list-style-type: none;
+
+                li {
+                    font-size: 1.25rem;
+                }
+            }
+
+            @content;
+        }
+    }
+}

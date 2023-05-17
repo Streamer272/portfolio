@@ -1,0 +1,62 @@
+.projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1%;
+  flex-direction: column;
+  height: 100%;
+}
+@media only screen and (max-width: 666px) {
+  .projects {
+    justify-content: flex-start;
+  }
+}
+.projects ol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.projects ol li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.projects ol li h3 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+.projects ol li ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.projects ol li ul li {
+  font-size: 1.25rem;
+}
+.projects ol li ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 0.1rem 0;
+}
+.projects ol li ul a {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-decoration: underline;
+  color: #eeeeee;
+}
+
+/*# sourceMappingURL=Projects.css.map */

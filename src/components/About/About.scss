@@ -1,0 +1,37 @@
+@import "../../styles/Colors";
+@import "../../styles/Mixins";
+
+.about {
+    @include flex(column, true);
+
+    height: 100%;
+
+    .personal-info {
+        max-width: 40vw;
+        @media only screen and (max-width: 900px) {
+            max-width: 80vw;
+        }
+
+        overflow-wrap: break-word;
+
+        .cell {
+            margin-top: 1.5rem;
+
+            text-align: center;
+            font-size: 1.25rem;
+
+            a {
+                text-decoration: underline;
+                color: $text-01;
+            }
+
+            .flag {
+                height: 0.8rem;
+            }
+
+            &:first-child {
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.content {
+  height: 93%;
+}
+@media only screen and (max-width: 666px) {
+  .content {
+    height: 92%;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

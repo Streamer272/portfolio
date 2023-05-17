@@ -1,0 +1,28 @@
+@import "../../styles/Colors";
+@import "../../styles/Mixins";
+
+.not-found {
+    @include flex(column, true);
+
+    height: 100%;
+
+    h1, h2 {
+        margin: .25rem;
+        padding: 0;
+    }
+    h1 {
+        font-size: 2.75rem;
+    }
+    h2 {
+        font-size: 2.25rem;
+    }
+
+    a {
+        text-decoration: underline $text-01;
+        color: $text-01;
+
+        font-size: 1.8rem;
+
+        cursor: pointer;
+    }
+}

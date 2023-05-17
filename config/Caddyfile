@@ -1,0 +1,3 @@
+streamer272.com, www.streamer272.com {
+	reverse_proxy * localhost:3000
+}

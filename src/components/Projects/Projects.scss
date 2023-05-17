@@ -1,0 +1,30 @@
+@import "../../styles/Colors";
+@import "../../styles/Mixins";
+
+.projects {
+    @include flex(column, true);
+
+    height: 100%;
+
+    @include vertical-list() {
+        ul {
+            li {
+                display: inline-block;
+
+                text-align: center;
+
+                margin: .1rem 0;
+            }
+
+            a {
+                display: inline-block;
+
+                margin: 0;
+                padding: 0;
+
+                text-decoration: underline;
+                color: $text-01;
+            }
+        }
+    };
+}
