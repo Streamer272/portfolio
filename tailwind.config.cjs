@@ -8,15 +8,20 @@ module.exports = {
     },
     colors: {
       transparent: "transparent",
-      primary: "#121212",
-      surface: "#232323",
-      accent: "#1ed760",
-      error: "#ff1245",
-      "on-primary": "#eeeeee",
-      "on-surface": "#e0e0e0",
-      "on-accent": "#121212",
+      primary: "#2E323E",
+      onPrimary: "#FFFFFF",
+      secondary: "#565A66",
+      onSecondary: "#FAFAD2",
+      accent: "#81858F",
+      onAccent: "#FFE4C4",
+      background: "#17191E",
+      onBackground: "#FFFFFF",
     },
-    extend: {},
+    extend: {
+      width: {
+        page: "80vw",
+      },
+    },
   },
   plugins: [],
 };
