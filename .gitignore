@@ -6,6 +6,7 @@ dist/
 
 # dependencies
 node_modules/
+bun.lockb
 
 # logs
 npm-debug.log*
@@ -16,9 +17,6 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
-
-# macOS-specific files
-.DS_Store
 
 # editors
 /.vscode
