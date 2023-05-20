@@ -8,7 +8,7 @@ import Page from "../layouts/Page.astro";
     class="grid grid-cols-2 grid-rows-2 w-[35rem] h-80 gap-1 bg-primary bg-opacity-50"
   >
     <div class="box rounded-br-3xl hover:mb-1 hover:mr-1 transition-all">
-      <a href="/story">My story</a>
+      <button data-url="/story">My story</button>
     </div>
     <div class="box rounded-bl-3xl hover:mb-1 hover:ml-1 transition-all">
       <a href="/work">My work</a>
@@ -20,29 +20,30 @@ import Page from "../layouts/Page.astro";
       <a href="/skills">My skills</a>
     </div>
   </div>
+  <!-- <Home client:load /> -->
 </Page>
 
 <style lang="scss" scoped>
   .box {
     @apply bg-background p-1 overflow-hidden;
 
-    a {
+    a,
+    button {
       @apply w-full h-full flex items-center justify-center text-xl text-onPrimary hover:scale-125 transition-transform;
     }
   }
 </style>
 
 <script>
-  const home = document.querySelector("#home")!!;
-  const boxes = document.querySelectorAll(".box");
+  const buttons = document.querySelectorAll(".box>button");
 
-  home.addEventListener("pointermove", (_event) => {
-    boxes.forEach((_box) => {
-      const event = _event as PointerEvent;
-      const box = _box as HTMLElement;
-      const rect = box.getBoundingClientRect();
-      box.style.setProperty("--x", `${event.clientX - rect.left}px`);
-      box.style.setProperty("--y", `${event.clientY - rect.top}px`);
-    });
-  });
+  console.log("ts", buttons.length);
+  for (const button of buttons) {
+    (button as HTMLElement).onclick = () => {
+      console.log("registered");
+      setTimeout(() => {
+        window.location.assign((button as HTMLElement).dataset.url!!);
+      }, 500);
+    };
+  }
 </script>
