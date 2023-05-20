@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { redirectPos } from "../stores/redirect";
+  import { redirectPos } from "../utils/redirect";
   let top: number;
   let left: number;
 
