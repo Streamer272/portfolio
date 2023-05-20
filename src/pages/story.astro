@@ -1,7 +1,45 @@
 ---
 import Page from "../layouts/Page.astro";
+
+const story = [
+  {
+    year: 2006,
+    title: "Birth",
+    description: "I was born in a small town in the middle of nowhere.",
+  },
+  {
+    year: 2012,
+    title: "School",
+    description: "I went to school and learned a lot of things.",
+  },
+  {
+    year: 2018,
+    title: "University",
+    description: "I went to university and learned even more things.",
+  },
+];
 ---
 
 <Page title="My story">
-  <p class="text-onBackground">Hello World!</p>
+  <div class="grid grid-cols-1">
+    {
+      story.map((event) => {
+        return (
+          <div class="group/event flex items-center h-20">
+            <div class="flex justify-center w-4 h-full">
+              <div class="w-px h-full bg-primary group-hover/event:bg-gradient-to-b group-hover/event:from-primary group-hover/event:via-accent group-hover/event:to-primary transition-colors" />
+            </div>
+            <div class="flex items-start justify-center flex-col h-full m-2 opacity-80 hover:opacity-100 transition-opacity">
+              <div class="flex items-center justify-center gap-x-2">
+                <p class="text-onBackground text-lg">{event.year}</p>
+                <div class="w-2 h-2 bg-secondary rounded-full" />
+                <p class="text-onBackground text-lg">{event.title}</p>
+              </div>
+              <p class="text-onBackground">{event.description}</p>
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
 </Page>
