@@ -63,9 +63,18 @@
       }
     }
 
-    .description {
+    .subtext-container {
       margin: .75rem .4rem;
-      font-size: 1.1rem;
+
+      .description {
+        margin: 0.2rem 0;
+        font-size: 1.1rem;
+      }
+
+      .subtext {
+        margin: 0.2rem 0;
+        font-size: 0.9rem;
+      }
     }
 
     .proprietary {

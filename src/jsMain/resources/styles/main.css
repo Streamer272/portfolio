@@ -2137,9 +2137,16 @@ body {
 .projects .project .title .status.deprecated {
   background-color: grey;
 }
-.projects .project .description {
+.projects .project .subtext-container {
   margin: 0.75rem 0.4rem;
+}
+.projects .project .subtext-container .description {
+  margin: 0.2rem 0;
   font-size: 1.1rem;
+}
+.projects .project .subtext-container .subtext {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
 }
 .projects .project .proprietary {
   margin: 1.25rem 0.5rem 0.75rem 0.5rem;

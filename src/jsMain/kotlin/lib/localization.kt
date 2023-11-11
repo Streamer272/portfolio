@@ -78,6 +78,7 @@ class ProjectsTranslationTable(
 class Project(
     val name: String,
     val description: String? = null,
+    val subtext: String? = null,
     val url: String? = null,
     val sources: List<ProjectSource>?,
     val phase: ProjectPhase

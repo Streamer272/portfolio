@@ -63,11 +63,23 @@ fun Projects(R: ProjectsTranslationTable) {
                     })
                 }
 
-                project.description?.let {
-                    P({
-                        classes("description")
-                    }) {
-                        Text(it)
+                Div({
+                    classes("subtext-container")
+                }) {
+                    project.description?.let {
+                        P({
+                            classes("description")
+                        }) {
+                            Text(it)
+                        }
+                    }
+
+                    project.subtext?.let {
+                        P({
+                            classes("subtext")
+                        }) {
+                            Text(it)
+                        }
                     }
                 }
 
