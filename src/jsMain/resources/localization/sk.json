@@ -223,11 +223,23 @@
       "deprecated": "Zastarané",
       "projects": [
         {
+          "name": "Binary",
+          "url": "https://binary.svitan.dev",
+          "description": "Táto stránka ti pomôže si precvičiť základné výpočty v binárke",
+          "sources": [
+            {
+              "name": "Frontend",
+              "href": "https://github.com/Streamer272/binary"
+            }
+          ],
+          "phase": "PRODUCTION"
+        },
+        {
           "name": "Zelená Škola",
-          "url": "https://zelena.svitan.dev",
+          "url": "https://zelena.svr.sk",
           "description": "Projekt Zelená Škola, ktorého cieľom je urobiť moju školu viac eco-friendly",
           "sources": null,
-          "phase": "DEVELOPMENT"
+          "phase": "PRODUCTION"
         },
         {
           "name": "NatArt",

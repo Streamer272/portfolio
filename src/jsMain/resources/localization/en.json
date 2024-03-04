@@ -230,11 +230,23 @@
       "deprecated": "Deprecated",
       "projects": [
         {
+          "name": "Binary",
+          "url": "https://binary.svitan.dev",
+          "description": "This website helps you practice your basic arithmetic in binary",
+          "sources": [
+            {
+              "name": "Frontend",
+              "href": "https://github.com/Streamer272/binary"
+            }
+          ],
+          "phase": "PRODUCTION"
+        },
+        {
           "name": "Green School",
-          "url": "https://zelena.svitan.dev",
+          "url": "https://zelena.svr.sk",
           "description": "The Green School project aiming to make my school more eco-friendly",
           "sources": null,
-          "phase": "DEVELOPMENT"
+          "phase": "PRODUCTION"
         },
         {
           "name": "NatArt",
