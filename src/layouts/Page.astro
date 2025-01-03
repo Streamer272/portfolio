@@ -1,6 +1,4 @@
 ---
-import Redirect from "../components/Redirect.svelte";
-
 export interface Props {
   title: string;
   bg?: string;
@@ -24,8 +22,6 @@ const { title, bg = "bg-background" } = Astro.props;
     <div class="w-page flex items-center justify-start flex-col">
       <slot />
     </div>
-
-    <Redirect client:load />
   </body>
 </html>
 
@@ -33,15 +29,6 @@ const { title, bg = "bg-background" } = Astro.props;
   @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
   body {
-    animation: appear 250ms ease-in-out forwards;
-  }
-
-  @keyframes appear {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    @apply bg-s1;
   }
 </style>
